@@ -25,3 +25,12 @@ body{
     width: calc(100%/16); 
     height: calc(100%/16);
 }
+
+#buttons button{
+    font-size: 24px;
+    padding: 8px;
+}
+
+#buttons{
+    margin: 1rem;
+}
