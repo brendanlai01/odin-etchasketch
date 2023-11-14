@@ -5,8 +5,15 @@ function createGrid(numRow){
         let gridDiv = document.createElement('div');
         gridDiv.style.width = "calc(100%/" + numRow + ")";
         gridDiv.style.height =  "calc(100%/" + numRow + ")";
+        addListener(gridDiv);
         container.appendChild(gridDiv);
     }
 }
 
-createGrid(24);
+function addListener(div){
+    div.addEventListener('mouseover', () =>{
+        div.style.backgroundColor = 'black';
+    })
+}
+
+createGrid(16);
