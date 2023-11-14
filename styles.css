@@ -20,3 +20,8 @@ body{
     width: 960px;
     height: 720px;
 }
+
+#container div{
+    width: calc(100%/16); 
+    height: calc(100%/16);
+}
