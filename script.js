@@ -27,6 +27,18 @@ function resetCanvas(){
     });
 }
 
+function changeSize(){
+    let input = prompt("Enter desired size for grid (less than 100):");
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+    createGrid(input);
+}
+
+gridButton.addEventListener('click', () =>{
+    changeSize();
+});
+
 resetButton.addEventListener('click', () =>{
     resetCanvas();
 });
