@@ -8,7 +8,7 @@ body{
 }
 
 #header{
-    text-align: center;
+    text-align: center
 }
 
 #container{
@@ -21,7 +21,7 @@ body{
     height: 720px;
 }
 
-#container div{
+#container #gridSquare{
     width: calc(100%/16); 
     height: calc(100%/16);
 }
